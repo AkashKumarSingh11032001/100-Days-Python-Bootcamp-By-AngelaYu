@@ -91,4 +91,11 @@
 # 10 
 # ex-3.5
 # Love Calulator
+my_name = input("Enter Your name: ")
+crush_name = input("Enter Crush name: ")
+name = (my_name + crush_name).lower()
+print(my_name +" weds "+crush_name)
+T,R,U,E = name.count('t'),name.count('r'),name.count('u'),name.count('e')
+L,O,V,E = name.count('l'),name.count('o'),name.count('v'),name.count('e')
 
+print(f"Chance Of Marriage: {T+R+U+E}{L+O+V+E}%")
