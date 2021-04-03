@@ -50,8 +50,45 @@
 #     print(f"Your bmi is {bmi}, you are clinically obese.")
 
 # ex-3.3
-year = eval(input("Enter Year: "))
-if(year % 4 == 0 or year % 100 == 0 or year % 400 == 0):
-    print("Leap Year")
-else:
-    print("Not a Leap year")
+# year = eval(input("Enter Year: "))
+# if(year % 4 == 0 or year % 100 == 0 or year % 400 == 0):
+#     print("Leap Year")
+# else:
+#     print("Not a Leap year")
+
+# 5
+# Multiple If statement
+
+# 6
+# ex-3.3
+# print("Welcome to Python Pizza Deliveries!")
+# size = input("What size pizza do you want? S, M, or L ")
+# add_pepperoni = input("Do you want pepperoni? Y or N ")
+# extra_cheese = input("Do you want extra cheese? Y or N ")
+# cost = 0
+# if(size == 'S'):
+#     if(add_pepperoni == 'Y'):
+#         cost += 17
+#     else:
+#         cost += 15
+
+# elif(size == 'M'):
+#     if(add_pepperoni == 'Y'):
+#         cost += 23
+#     else:
+#         cost += 20
+# elif(size == 'L'):
+#     if(add_pepperoni == 'Y'):
+#         cost += 28
+#     else:
+#         cost += 25
+
+# if(extra_cheese == 'Y'):
+#     cost += 1
+
+# print(f"Total price you have to pay: ${cost}")
+
+# 10 
+# ex-3.5
+# Love Calulator
+
