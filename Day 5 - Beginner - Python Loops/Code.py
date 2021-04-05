@@ -7,10 +7,10 @@
 #     print(i + " pie")
 
 #2 ex-5.1
-student_heights = [180, 124, 165, 173, 189, 169, 146]
-sum =0
-for height in student_heights:
-    sum += height
-avg = sum/len(student_heights)
+# student_heights = [180, 124, 165, 173, 189, 169, 146]
+# sum =0
+# for height in student_heights:
+#     sum += height
+# avg = sum/len(student_heights)
 
-print(round(avg))
+# print(round(avg))
