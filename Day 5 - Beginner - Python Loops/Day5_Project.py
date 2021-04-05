@@ -5,12 +5,13 @@ symbols = ['!', '#', '$', '&', '(', ')', '*', '+']
 
 print("Welcome to the PyPassword Genrator!!!")
 
-passLen = eval(input("Length Of password: "))
+
+letterLen = eval(input("Number of Letter: "))
 symLen = eval(input("Number of Symbol: "))
 numLen = eval(input("NUmber in password: "))
 
-password = ""
-for i in range(1,passLen+1):
+password = []
+for i in range(1,letterLen+1):
     password += random.choice(letters)
 for j in range(1,symLen+1):
     password += random.choice(symbols)
@@ -18,3 +19,10 @@ for k in range(1,numLen+1):
     password += random.choice(numbers)
 
 print(password)
+random.shuffle(password)
+print(password)
+
+passsd = ""
+for str in password:
+    passsd += str
+print("Your Strong Password: "+passsd)
