@@ -14,3 +14,7 @@
 # avg = sum/len(student_heights)
 
 # print(round(avg))
+
+#3 ex-5.2
+student_scores = [78, 65, 89, 86, 55, 91, 64, 89]
+print(max(student_scores))
