@@ -1,16 +1,16 @@
 
 # 1
 import random
+import string
 
 
-word_list = ["abcd","efgh","ijkl"]
-
+word_list = ["hello","how","are","you"]
 rand_word = random.choice(word_list)
 
-print(rand_word)
+user_word = input("Guess any word: ").lower()
 
-user_word = input("Guess any word: ")
-if(user_word in rand_word):
-    print("YES")
-else:
-    print("NO")
+for letter in rand_word:
+    if letter == user_word:
+        print("Right")
+    else:
+        print("Wrong")
