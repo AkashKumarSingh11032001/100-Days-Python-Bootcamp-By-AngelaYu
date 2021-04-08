@@ -1,5 +1,5 @@
-#1
-def greet():
-    print("Hello\n"+ "Bye\n"+"See you")
+#1 Day8
+def greet(str):
+    print(f"Hello {str}\n"+ f"Bye {str}\n"+ f"See you {str}")
 
-greet()
+greet("Akash")
