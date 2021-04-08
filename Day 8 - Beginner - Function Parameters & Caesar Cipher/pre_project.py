@@ -5,29 +5,33 @@ direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
-def common_fun():
+
+def common_fun(task,tex,shif):
     ciper_text = ""
-    for i in ciper_tex:
-        if "en":
+    if task == "ec":
+        for i in tex:
             ciper_text += chr(ord(i)+shif)
-        else:
+    else:
+        for i in tex:
             ciper_text += chr(ord(i)-shif)
 
-    return decry_text
+    return ciper_text
 
 
 def encrypt(tex, shif):
-    ency_text = ""
-    for i in tex:
-        ency_text += chr(ord(i)+shif)
-    return ency_text
+    # ency_text = ""
+    # for i in tex:
+    #     ency_text += chr(ord(i)+shif)
+    # return ency_text
+    return common_fun("ec",tex,shif)
 
 
-def decrypt(ency_tex, shif):
-    decry_text = ""
-    for i in ency_tex:
-        decry_text += chr(ord(i)-shif)
-    return decry_text
+def decrypt(tex, shif):
+    # decry_text = ""
+    # for i in ency_tex:
+    #     decry_text += chr(ord(i)-shif)
+    # return decry_text
+    return common_fun("dc",tex,shif)
 
 
 if direction == "encode":
