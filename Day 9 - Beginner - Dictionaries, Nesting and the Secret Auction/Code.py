@@ -23,31 +23,35 @@
 #     print(dict[i]) # will print "vallue"
 
 
-# ex-9.1
-student_scores = {
+# # ex-9.1
+# student_scores = {
 
-    "Harry": 81,
+#     "Harry": 81,
 
-    "Ron": 78,
+#     "Ron": 78,
 
-    "Hermione": 99,
+#     "Hermione": 99,
 
-    "Draco": 74,
+#     "Draco": 74,
 
-    "Neville": 62,
+#     "Neville": 62,
 
-}
+# }
 
-grade = {}
+# grade = {}
 
-for i in student_scores:
-    if(student_scores[i] >= 91):
-        grade[i] = "OUTSTANDING"
-    elif(student_scores[i] >= 81 and student_scores[i] <= 90):
-        grade[i] = "EXCEED EXPECTATION"
-    elif(student_scores[i] >= 71 and student_scores[i] <=80):
-        grade[i] = "EXCEED EXPECTATION"
-    elif(student_scores[i] <= 70):
-        grade[i] = "EXCEED EXPECTATION"
+# for i in student_scores:
+#     if(student_scores[i] >= 91):
+#         grade[i] = "OUTSTANDING"
+#     elif(student_scores[i] >= 81 and student_scores[i] <= 90):
+#         grade[i] = "EXCEED EXPECTATION"
+#     elif(student_scores[i] >= 71 and student_scores[i] <=80):
+#         grade[i] = "ACCEPTABLE"
+#     elif(student_scores[i] <= 70):
+#         grade[i] = "FAIL"
+
+
+# print(grade)
+
 
 
