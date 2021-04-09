@@ -53,11 +53,51 @@
 
 # print(grade)
 
-# NESTING
-num = {
+# # NESTING
+# num = {
 
-    1:'one',
-    2:'two',
-    3:'three',
-}
+#     1:'one',
+#     2:'two',
+#     3:'three',
+# }
 
+# travel_log = {
+
+# "France": {"cities_visited": ["Paris", "Lille", "Dijon"], "total_visits":[2,5,1]},
+
+# "Germany": {"cities_visited":["Berlin", "Hamburg", "Stuttgart"],"total_visits":[2,5,1]}
+
+# }
+
+# ex-9.2
+travel_log = [
+    {
+        "country": "France",
+
+        "visits": 12,
+
+        "cities": ["Paris", "Lille", "Dijon"]
+    },
+    {
+        "country": "Germany",
+
+        "visits": 5,
+
+        "cities": ["Berlin", "Hamburg", "Stuttgart"]
+    }
+]
+
+def add_new_country(con,vis,plac):
+    new_dict = {}
+    new_dict["country"] = con
+    new_dict["visits"] = vis
+    new_dict["cities"] = plac
+
+    return travel_log.append(new_dict)
+
+
+
+
+
+add_new_country("Russia",2,["Mosscow","Saint Peterburg"])
+print(travel_log)
