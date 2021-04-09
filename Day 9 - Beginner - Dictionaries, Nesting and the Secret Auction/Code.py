@@ -15,3 +15,9 @@ print(dict)
 
 # # empty the disctnory
 # dict = {}
+
+#  LOOPING THROUGH LOOOP
+
+for i in dict:
+    print(i) # Will print "key" itself
+    print(dict[i]) # will print "vallue"
