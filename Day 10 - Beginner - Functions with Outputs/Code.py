@@ -9,7 +9,7 @@
 # print(formate_name())
 
 #3
-def formate_name():
+def formate_name(): 
     f_name = input("Enter 1st name: ").title()
     l_name = input("Enter  2nd name:").title()
 
