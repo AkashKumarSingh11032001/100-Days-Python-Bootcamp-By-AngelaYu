@@ -1,9 +1,26 @@
 from art import logo
 import random
+def another(user_card,comp_card,card):
+    another_card = input("Type 'y' to get another card, type 'n' to pass: ")
+
+    if(another_card == 'y'):
+        if(sum(user_card) < 21):
+            game_ext(user_card,comp_card,card)
+    else:
+        exit()
+
 
 def game_ext(user_card,comp_card,card):
-    user_card += random.choice(card)
-    print(user_card)
+    
+    user_card.append(random.choice(card))
+    print("Your cards: "+ str(user_card)+", current score: "+str(sum(user_card)))
+    print("Computer's first card: "+ str(comp_card[0]))
+    
+    if(sum(user_card) > 21):
+        print("Your Final hand: "+ str(user_card)+ ", final scores: ")
+    another(user_card,comp_card,card)
+
+
 
 
 
@@ -16,13 +33,9 @@ def play():
     
     comp_card = random.choices(cards,k=2)
     print("Computer's first card: "+ str(comp_card[0]))
-
-    another_card = input("Type 'y' to get another card, type 'n' to pass: ")
-
-    if(another_card == 'y'):
-        game_ext(user_card,comp_card,cards)
-    else:
-        exit()
+    
+    another(user_card,comp_card,cards)
+    
 
 
 want = input("Do you want to PLAY 'y' or 'n': ")
