@@ -6,7 +6,7 @@ def game_ext(chance,guess_num):
     user_guess = int(input("Make a guess: "))
     if(user_guess == guess_num):
         print("You Passed !!!")
-        exit
+        exit()
     elif(user_guess < guess_num):
         print("Too Low.")
     else:
