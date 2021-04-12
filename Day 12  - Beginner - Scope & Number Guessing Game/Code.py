@@ -19,12 +19,22 @@
 #         new_emy = enemy[0]
 
 
-# modify global scope
+# # modify global scope
+# a = 1
+# def update():
+#     global a
+#     a += 1
+#     print(f"inside {a}")
+
+# update()
+# print(f"outside {a}")
+
+# OR
+
 a = 1
 def update():
-    global a
-    a += 1
     print(f"inside {a}")
+    return a+1
 
 update()
 print(f"outside {a}")
