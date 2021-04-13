@@ -21,9 +21,9 @@
 #   print("You are a Gen Z.")
 
 # # Fix the Errors
-age = int(input("How old are you?"))
-if age > 18:
-  print(f"You can drive at age {age}.")
+# age = int(input("How old are you?"))
+# if age > 18:
+#   print(f"You can drive at age {age}.")
 
 # #Print is Your Friend
 # pages = 0
