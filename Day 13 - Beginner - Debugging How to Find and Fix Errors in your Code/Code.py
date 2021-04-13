@@ -26,14 +26,14 @@
 #   print(f"You can drive at age {age}.")
 
 # #Print is Your Friend
-pages = 0
-word_per_page = 0
-pages = int(input("Number of pages: "))
-word_per_page = int(input("Number of words per page: "))
-total_words = pages * word_per_page
-print(f"pages = {pages}")
-print(f"word_per_page = {word_per_page}")
-print(total_words)
+# pages = 0
+# word_per_page = 0
+# pages = int(input("Number of pages: "))
+# word_per_page = int(input("Number of words per page: "))
+# total_words = pages * word_per_page
+# print(f"pages = {pages}")
+# print(f"word_per_page = {word_per_page}")
+# print(total_words)
 
 # #Use a Debugger
 # def mutate(a_list):
@@ -44,3 +44,11 @@ print(total_words)
 #     print(b_list)
 
 # mutate([1, 2, 3, 5, 8, 13])
+
+# ex-13.1
+number = int(input("Which number do you want to check?"))
+
+if number % 2 == 0:
+    print("This is an even number. ") 
+else:
+    print("This is an odd number.")
