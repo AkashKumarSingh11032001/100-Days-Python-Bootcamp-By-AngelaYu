@@ -9,10 +9,13 @@ def money_cal(sum,var):
         res = sum - data[var][ "cost"]
         print( f" Here is ${round(res,2)} changes")
         print(f"HEre is your {var} enjoy")
+        return 1
     elif(sum ==  data[var][ "cost"] ):
         print(f"Here is your {var} enjoy")
+        return 2
     else:
         print("Not having sufficient money!. Money refunded")
+        return 3
 
 
 
@@ -46,22 +49,25 @@ report = {
     "cost": 0
 }
 
+flag = True
+while True:
+    coffee = input("What would you like? (espresso/latte/cappuccino): ")
 
-
-coffee = input("What would you like? (espresso/latte/cappuccino): ")
-
-if(coffee == "report"):
-    for key in report["ingredients"]:
-        print(str(key),str(report["ingredients"][key])+ "ml" + str(report["cost"]) + "$")
-elif(coffee == "espresso"):
-    user_money = take_user("espresso")
-    user_ex_money = money_cal(user_money,"espresso")
-    print(report_update("espresso"))
-elif(coffee == "latte"):
-    user_money = take_user("latte")
-    user_ex_money = money_cal(user_money,"latte")
-    print(report_update("latte"))
-elif(coffee == "cappuccino"):
-    user_money = take_user("cappuccino")
-    user_ex_money = money_cal(user_money,"cappuccino")
-    print(report_update("cappuccino"))
+    if(coffee == "report"):
+        for key in report["ingredients"]:
+            print(str(key),str(report["ingredients"][key])+ "ml" + str(report["cost"]) + "$")
+    elif(coffee == "espresso"):
+        user_money = take_user("espresso")
+        user_ex_money = money_cal(user_money,"espresso")
+        if user_ex_money == 1 or user_ex_money == 2:
+            print(report_update("espresso"))
+    elif(coffee == "latte"):
+        user_money = take_user("latte")
+        user_ex_money = money_cal(user_money,"latte")
+        if user_ex_money == 1 or user_ex_money == 2:
+            print(report_update("latte"))
+    elif(coffee == "cappuccino"):
+        user_money = take_user("cappuccino")
+        user_ex_money = money_cal(user_money,"cappuccino")
+        if user_ex_money == 1 or user_ex_money == 2:
+            print(report_update("cappuccino"))
