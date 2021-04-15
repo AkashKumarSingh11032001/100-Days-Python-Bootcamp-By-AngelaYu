@@ -20,15 +20,11 @@ def ram():
 def game_play(A,B):
     your_ans = input("Enter A or B: ")
     
-
     if(check_ans(your_ans,A,B)):
         return "Corret choice"
     else:
         return "Wrong"
         
-    
-    
-
 game_continue = True
 score = 0
 while game_continue:
