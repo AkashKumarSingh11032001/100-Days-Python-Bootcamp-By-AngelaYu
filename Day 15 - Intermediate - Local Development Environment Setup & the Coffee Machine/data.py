@@ -2,6 +2,7 @@ data = {
     "espresso": {
         "ingredients": {
             "water": 50,
+            "milk": 100,
             "coffee": 18,
         },
         "cost": 1.5,
