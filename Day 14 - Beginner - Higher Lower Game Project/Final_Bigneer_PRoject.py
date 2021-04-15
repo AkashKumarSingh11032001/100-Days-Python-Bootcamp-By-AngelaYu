@@ -6,12 +6,11 @@ import random
 print(logo)
 
 
-def check_ans(A,B):
-    print(f"A: {type(A['follower_count'])} B: {B['follower_count']}")
+def check_ans(your_ans,A,B):
     if(A['follower_count'] > B['follower_count']):
-        return 'yes'
+        return your_ans == 'A'
     else:
-        return B 
+        return your_ans == 'B'
 
 
 def ram():
@@ -22,43 +21,25 @@ def game_play(A,B):
     your_ans = input("Enter A or B: ")
     
 
-    if(your_ans == check_ans(A,B)):
-        print("Corret choice")
+    if(check_ans(your_ans,A,B)):
+        return "Corret choice"
     else:
-        print(f"A: {A['follower_count']} B: {B['follower_count']}")
-        print("Wrong")
+        return "Wrong"
         
     
     
 
-
-
-player1 = ram()
-print(f"Compare A: {player1['name']}, {player1['description']}, {player1['country']}")
-print(vs)
-player2 = ram()
-print(f"Against B: {player2['name']}, {player2['description']}, {player2['country']}")
-
-count = 0
-if(game_play(player1,player2) == "Corret choice"):
-    count += 1
-else:
-    print(f"Your score: {count}")
-    exit()
-
-# x = True
-# while(x == True):
-#     if(game_play(player1,player2)):
-#         count += 1
-# else:
-#     x = False
+game_continue = True
+score = 0
+while game_continue:
+    player1 = ram()
+    print(f"Compare A: {player1['name']}, {player1['description']}, {player1['country']}")
+    print(vs)
+    player2 = ram()
+    print(f"Against B: {player2['name']}, {player2['description']}, {player2['country']}")
     
-# 
-
-
-
-
-# a = random.choice(data)
-# b = random.randint(0,len(data))
-# print(f" User 1: data first elemnt {data[a]} and first elemt name {data[a]['name']} and follower {data[a]['follower_count']} and description {data[a]['description']} and country {data[a]['country']} \n")
-# print(f" User 2: data first elemnt {data[b]} and first elemt name {data[b]['name']} and follower {data[b]['follower_count']} and description {data[b]['description']} and country {data[b]['country']} ")
+    if(game_play(player1,player2) == "Corret choice"):
+        score += 1
+    else:
+        game_continue = False
+        print(f"Sorry, that's wrong. Final score: {score}")
