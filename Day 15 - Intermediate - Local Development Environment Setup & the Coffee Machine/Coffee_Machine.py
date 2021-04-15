@@ -76,3 +76,5 @@ while flag:
         if(report["ingredients"][i] < data[coffee]["ingredients"][i]):
             print("We are out of Stocks")
             flag = False
+        else:
+            continue
