@@ -50,7 +50,7 @@ report = {
 }
 
 flag = True
-while True:
+while flag:
     coffee = input("What would you like? (espresso/latte/cappuccino): ")
 
     if(coffee == "report"):
@@ -71,3 +71,8 @@ while True:
         user_ex_money = money_cal(user_money,"cappuccino")
         if user_ex_money == 1 or user_ex_money == 2:
             print(report_update("cappuccino"))
+    
+    for i in report:
+        if(report["ingredients"][i] < data[coffee]["ingredients"][i]):
+            print("We are out of Stocks")
+            flag = False
