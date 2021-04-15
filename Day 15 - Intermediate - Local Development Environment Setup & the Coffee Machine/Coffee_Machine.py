@@ -57,3 +57,11 @@ elif(coffee == "espresso"):
     user_money = take_user("espresso")
     user_ex_money = money_cal(user_money,"espresso")
     print(report_update("espresso"))
+elif(coffee == "latte"):
+    user_money = take_user("latte")
+    user_ex_money = money_cal(user_money,"latte")
+    print(report_update("latte"))
+elif(coffee == "cappuccino"):
+    user_money = take_user("cappuccino")
+    user_ex_money = money_cal(user_money,"cappuccino")
+    print(report_update("cappuccino"))
