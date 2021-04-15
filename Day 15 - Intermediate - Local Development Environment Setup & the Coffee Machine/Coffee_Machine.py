@@ -56,7 +56,7 @@ while flag:
     if(coffee == "report"):
         for key in report["ingredients"]:
             print(str(key),str(report["ingredients"][key])+ "ml" )
-        print("cost " + str(report["cost"]) + " $")
+        print("cost " + str(report["cost"]) + "$")
 
 
     if(coffee == "espresso"):
