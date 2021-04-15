@@ -3,4 +3,17 @@ from art import logo
 
 print(logo)
 
+report = {
+    "ingredients":{
+    "Water": 300,
+    "Milk": 200,
+    "Coffee": 100
+    },
+    "cost": 2.5
+}
+
 coffee = input("What would you like? (espresso/latte/cappuccino): ")
+
+if(coffee == "report"):
+    for key in report["ingredients"]:
+        print(str(key),str(report["ingredients"][key])+ "ml" + report[])
