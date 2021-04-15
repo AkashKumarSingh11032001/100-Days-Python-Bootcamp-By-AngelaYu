@@ -55,26 +55,31 @@ while flag:
 
     if(coffee == "report"):
         for key in report["ingredients"]:
-            print(str(key),str(report["ingredients"][key])+ "ml" + str(report["cost"]) + "$")
-    elif(coffee == "espresso"):
+            print(str(key),str(report["ingredients"][key])+ "ml" )
+        print("cost " + str(report["cost"]) + " $")
+
+
+    if(coffee == "espresso"):
         user_money = take_user("espresso")
         user_ex_money = money_cal(user_money,"espresso")
         if user_ex_money == 1 or user_ex_money == 2:
-            print(report_update("espresso"))
+            report_update("espresso")
     elif(coffee == "latte"):
         user_money = take_user("latte")
         user_ex_money = money_cal(user_money,"latte")
         if user_ex_money == 1 or user_ex_money == 2:
-            print(report_update("latte"))
+            report_update("latte")
     elif(coffee == "cappuccino"):
         user_money = take_user("cappuccino")
         user_ex_money = money_cal(user_money,"cappuccino")
         if user_ex_money == 1 or user_ex_money == 2:
-            print(report_update("cappuccino"))
-    
-    for i in report:
-        if(report["ingredients"][i] < data[coffee]["ingredients"][i]):
-            print("We are out of Stocks")
-            flag = False
-        else:
-            continue
+            report_update("cappuccino")
+    if(coffee != "report"):
+        for i in report["ingredients"]:
+            # print(report["ingredients"][i])
+            # print(data[coffee]["ingredients"][i])
+            if(report["ingredients"][i] < data[coffee]["ingredients"][i]):
+                print("We are out of Stocks")
+                flag = False
+            else:
+                continue
