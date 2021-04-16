@@ -5,7 +5,7 @@ from turtle import Turtle,Screen
 timmy = Turtle()
 print(timmy)
 timmy.shape("turtle")
-timmy.color("black","yellow")
+timmy.color("yellow")
 
 # object.attribute
 my_screen = Screen()
