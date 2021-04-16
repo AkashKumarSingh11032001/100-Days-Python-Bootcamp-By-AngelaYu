@@ -5,10 +5,12 @@ from turtle import Turtle,Screen
 timmy = Turtle()
 print(timmy)
 
+# object.attribute
 my_screen = Screen()
 print(my_screen.canvheight) #selecting attribute from obj
 
-
+#object.method
+my_screen.exitonclick()
 
 
 
