@@ -7,6 +7,7 @@ print(timmy)
 timmy.shape("turtle")
 timmy.color("yellow")
 
+timmy.forward(100)
 # object.attribute
 my_screen = Screen()
 print(my_screen.canvheight) #selecting attribute from obj
