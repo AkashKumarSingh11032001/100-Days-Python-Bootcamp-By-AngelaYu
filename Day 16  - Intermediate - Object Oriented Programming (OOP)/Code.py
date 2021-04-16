@@ -6,6 +6,8 @@ timmy = Turtle()
 print(timmy)
 
 my_screen = Screen()
-print(my_screen.canvheight)
+print(my_screen.canvheight) #selecting attribute from obj
+
+
 
 
