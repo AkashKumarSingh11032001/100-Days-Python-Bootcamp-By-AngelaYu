@@ -15,6 +15,7 @@
 # #object.method
 # my_screen.exitonclick()
 
+import prettytable
 
 
 
