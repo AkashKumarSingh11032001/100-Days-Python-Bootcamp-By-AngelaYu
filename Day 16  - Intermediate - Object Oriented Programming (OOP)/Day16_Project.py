@@ -6,6 +6,7 @@ money_machine = MoneyMachine()
 coffee_maker = CoffeeMaker()
 menu = Menu()
 
+
 coffee_maker.report()
 money_machine.report()
 
@@ -19,4 +20,4 @@ while is_on:
         coffee_maker.report()
         money_machine.report()
     else:
-        drink = menu.find_drink()
+        drink = menu.find_drink(choice)
