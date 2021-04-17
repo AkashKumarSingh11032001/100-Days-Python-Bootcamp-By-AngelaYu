@@ -15,7 +15,16 @@
 # #object.method
 # my_screen.exitonclick()
 
-import prettytable
+from prettytable import PrettyTable
+table = PrettyTable()
+
+table.add_column("Name",["Akash","Sweety","Priya","Shraddha"])
+table.add_column("Age",["21","21","21","19"])
+table.align = "l"
+
+print(table)
+
+
 
 
 
