@@ -1,14 +1,14 @@
 class User:
     #construtor
-    def __init__(self,user_id):
+    def __init__(self,user_id,user_name):
         self.id = user_id
+        self.username = user_name
 
 
-
-user_1 = User()
+user_1 = User("001","Akash")
+user_2 = User("002","Angella")
 # user_1.id = "001"
 # user_1.username = "Akash"
 
 print(user_1.username)
 
-user_2 = User()
