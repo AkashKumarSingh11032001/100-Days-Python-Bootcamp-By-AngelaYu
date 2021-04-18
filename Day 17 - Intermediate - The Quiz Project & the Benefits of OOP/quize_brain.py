@@ -12,8 +12,17 @@ class QuizBrain:
     def next_question(self):
         current_ques = self.question_list[self.question_number]
         self.question_number += 1
-        input(f"Q.{self.question_number}: {current_ques.text} (True/False) ")
+        user_ans = input(f"Q.{self.question_number}: {current_ques.text} (True/False) ")
+        self.check_ans(user_ans, current_ques.answer)
 
+    def check_ans(self, user_ans, correct_ans):
+        if(user_ans.lower() == correct_ans.lower()):
+            print("You are Right")
+        else:
+            print("Wrong")
+        print(f"correct ansewer : {correct_ans}")
+
+     
         
 
 
