@@ -1,5 +1,7 @@
 from question_model import Question
 from data import question_data
+from quize_brain import QuizBrain
+
 
 question_bank = []
 for quest in question_data:
@@ -10,3 +12,4 @@ for quest in question_data:
 
 
 
+QuizBrain()
