@@ -18,12 +18,16 @@ class QuizBrain:
     def check_ans(self, user_ans, correct_ans):
         if(user_ans.lower() == correct_ans.lower()):
             print("You are Right")
+            self.score += 1
         else:
             print("Wrong")
         print(f"correct ansewer : {correct_ans}")
+        print(f"Your current score {self.score}/{self.question_number}")
 
-    def score(self):
-        
+
+
+
+   
         
 
 
