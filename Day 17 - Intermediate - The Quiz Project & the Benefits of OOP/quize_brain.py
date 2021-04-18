@@ -22,7 +22,8 @@ class QuizBrain:
             print("Wrong")
         print(f"correct ansewer : {correct_ans}")
 
-     
+    def score(self):
+        
         
 
 
