@@ -3,3 +3,4 @@ class User:
 
 
 user_1 = User()
+user_1.id = "001"
