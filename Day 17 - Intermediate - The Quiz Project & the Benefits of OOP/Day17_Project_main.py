@@ -16,3 +16,6 @@ quize = QuizBrain(question_bank)
 
 while quize.question_left():
     quize.next_question()
+
+print("You completed the Quize Challlenge\n")
+print(f"Your final score {}")
