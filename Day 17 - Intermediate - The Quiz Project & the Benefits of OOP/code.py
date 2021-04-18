@@ -1,5 +1,8 @@
 class User:
-    pass
+    #construtor
+    def __init__(self):
+        
+
 
 
 user_1 = User()
