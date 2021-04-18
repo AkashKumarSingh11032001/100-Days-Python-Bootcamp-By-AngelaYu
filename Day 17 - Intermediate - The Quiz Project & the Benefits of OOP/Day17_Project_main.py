@@ -12,5 +12,5 @@ for quest in question_data:
 
 
 
-quize = QuizBrain(question_bank)
+quize = QuizBrain(question_bank) 
 quize.next_question()
