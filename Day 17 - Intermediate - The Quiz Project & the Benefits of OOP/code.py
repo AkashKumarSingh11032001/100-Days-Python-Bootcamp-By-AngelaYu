@@ -1,7 +1,7 @@
 class User:
     #construtor
     def __init__(self):
-        
+        print("Constructor Called")
 
 
 
