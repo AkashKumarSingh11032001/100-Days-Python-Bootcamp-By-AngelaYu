@@ -13,4 +13,6 @@ for quest in question_data:
 
 
 quize = QuizBrain(question_bank) 
-quize.next_question()
+
+while quize.question_left:
+    quize.next_question()

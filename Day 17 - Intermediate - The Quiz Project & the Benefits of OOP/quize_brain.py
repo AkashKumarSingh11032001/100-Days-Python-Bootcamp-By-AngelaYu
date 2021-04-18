@@ -4,7 +4,7 @@ class QuizBrain:
         self.question_list = q_list
 
     def question_left(self):
-        if(self.question_number <= len(self.question_list)):
+        if(self.question_number < len(self.question_list)):
             return True
         else:
             return False
