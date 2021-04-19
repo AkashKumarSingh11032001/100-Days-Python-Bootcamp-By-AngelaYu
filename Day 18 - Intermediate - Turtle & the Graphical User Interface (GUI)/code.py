@@ -6,6 +6,10 @@ my_tut = Turtle()
 my_tut.shape("turtle")
 # //cursor color
 my_tut.color("red")
+# // cursor move
+my_tut.forward(100)
+my_tut.right(90)
+my_tut
 
 
 
