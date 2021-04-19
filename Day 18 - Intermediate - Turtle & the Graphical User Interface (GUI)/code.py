@@ -12,6 +12,7 @@ my_tut.color("red")
 
 
 
+
 # // screen exit on click
 screen = Screen()
 screen.exitonclick()
