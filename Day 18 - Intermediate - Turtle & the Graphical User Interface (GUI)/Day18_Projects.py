@@ -3,6 +3,9 @@ import random
 import turtle
 import colorgram
 
-lis  = []
-lis.append(tuple(colorgram.extract("a.jpg",10)))
-print(lis)
+# lis  = []
+# lis.append(tuple(colorgram.extract("a.jpg",10)))
+# print(lis)
+color = colorgram.extract("a.jpg",10)
+print(color)
+ṇ
