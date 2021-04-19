@@ -10,3 +10,5 @@ for i in range(9):
         tut.left(angle)
 
 
+screen = Screen()
+screen.exitonclick()
