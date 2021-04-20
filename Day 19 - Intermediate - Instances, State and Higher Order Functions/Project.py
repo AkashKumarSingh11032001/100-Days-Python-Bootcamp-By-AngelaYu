@@ -9,7 +9,7 @@ screen.setup(width= 500,height= 400) #scren size
 user_bet = screen.textinput(title="Make your Bet", prompt="Which will win the match") #pop-up
 print(user_bet)
 colors = ["yellow", "gold", "orange", "red", "maroon", "violet", "magenta", "purple" ]
-y_pos = [-100, -80, -60, -40, -20, 0, 20 ,40]
+y_pos = [-100, -70]
 
 
 for _ in range(8):
