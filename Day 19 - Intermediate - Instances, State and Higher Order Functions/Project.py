@@ -3,7 +3,7 @@ import random
 import turtle
 import random
 
-
+is_race_on = False
 screen = Screen()
 screen.setup(width= 500,height= 400) #scren size
 user_bet = screen.textinput(title="Make your Bet", prompt="Which will win the match") #pop-up
@@ -17,6 +17,9 @@ for _ in range(8):
     my_tut.color(colors[_])
     my_tut.penup()
     my_tut.goto(x=-230,y=y_pos[_])
+
+
+
 
 
 screen.exitonclick()
