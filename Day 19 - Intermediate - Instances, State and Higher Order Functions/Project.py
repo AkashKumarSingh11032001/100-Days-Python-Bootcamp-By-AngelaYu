@@ -4,8 +4,8 @@ import turtle
 import random
 
 my_tut = Turtle()
-
-
-
 screen = Screen()
+
+
+
 screen.exitonclick()
