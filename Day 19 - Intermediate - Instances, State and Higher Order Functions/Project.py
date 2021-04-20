@@ -17,13 +17,15 @@ for _ in range(8):
     my_tut.color(colors[_])
     my_tut.penup()
     my_tut.goto(x=-230,y=y_pos[_])
+    all_tut.append(my_tut)
 
 if user_bet:
     is_race_on = True
 
 while is_race_on:
-    randon_dis = random.int(0,10)
-    my_tut.forward(randon_dis)
+    for tut in all_tut:
+        randon_dis = random.int(0,10)
+        my_tut.forward(randon_dis)
 
 
 
