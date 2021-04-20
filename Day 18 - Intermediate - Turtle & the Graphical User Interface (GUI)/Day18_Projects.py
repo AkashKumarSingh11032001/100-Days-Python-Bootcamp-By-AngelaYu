@@ -6,6 +6,8 @@ import turtle
 my_tut = Turtle()
 my_tut.dot(20,randomcol())
 
+
+
 # rgb_color = []
 # colors = colorgram.extract("a.jpg",38)
 # for color in colors:
