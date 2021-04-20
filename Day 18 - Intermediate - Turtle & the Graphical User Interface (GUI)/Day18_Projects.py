@@ -19,7 +19,7 @@ my_tut.setheading(225)
 my_tut.forward(250)
 my_tut.setheading(0)
 
-number_of_dots = 10
+number_of_dots = 101
 for dot_count in range(1,number_of_dots):
     my_tut.dot(20,randomcol())
     my_tut.forward(50)
