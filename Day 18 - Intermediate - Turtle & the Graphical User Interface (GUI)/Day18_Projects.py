@@ -6,6 +6,7 @@ import random
 my_tut = Turtle()
 turtle.colormode(255)
 my_tut.penup()
+my_tut.hideturtle()
 my_tut.speed("fastest")
 
 def randomcol():
