@@ -15,11 +15,20 @@ def randomcol():
 
     return random_color
 
+my_tut.setheading(225)
+my_tut.forward(250)
+my_tut.setheading(0)
+
 for _ in range(10):
     my_tut.dot(20,randomcol())
     my_tut.forward(50)
 
+my_tut.setheading(90)
+my_tut.forward(50)
+my_tut.setheading(100)
 
+
+my_tut.forward(500)
 # rgb_color = []
 # colors = colorgram.extract("a.jpg",38)
 # for color in colors:
