@@ -24,7 +24,7 @@ if user_bet:
 
 while is_race_on:
     for tut in all_tut:
-        randon_dis = random.int(0,10)
+        randon_dis = random.randint(0,10)
         my_tut.forward(randon_dis)
 
 
