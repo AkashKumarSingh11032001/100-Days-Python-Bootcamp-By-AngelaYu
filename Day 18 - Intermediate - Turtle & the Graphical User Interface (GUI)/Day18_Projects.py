@@ -1,8 +1,7 @@
 from turtle import Screen, Shape, Turtle, color
 import random
 import turtle
-from PIL.Image import new
-import colorgram
+
 
 # rgb_color = []
 # colors = colorgram.extract("a.jpg",38)
