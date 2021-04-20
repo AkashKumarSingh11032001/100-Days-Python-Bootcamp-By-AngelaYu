@@ -10,6 +10,7 @@ user_bet = screen.textinput(title="Make your Bet", prompt="Which will win the ma
 print(user_bet)
 
 my_tut = Turtle()
+my_tut.goto(x=-230,y=-100 )
 
 
 screen.exitonclick()
