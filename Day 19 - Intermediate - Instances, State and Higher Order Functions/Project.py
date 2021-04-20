@@ -18,7 +18,10 @@ for _ in range(8):
     my_tut.penup()
     my_tut.goto(x=-230,y=y_pos[_])
 
+if user_bet:
+    is_race_on = True
 
+while is_race_on:
 
 
 
