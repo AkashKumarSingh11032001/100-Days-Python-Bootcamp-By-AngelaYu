@@ -5,7 +5,7 @@ import random
 
 my_tut = Turtle()
 screen = Screen()
-screen.setup(500,400) #scren size
+screen.setup(width= 500,height= 400) #scren size
 
 
 screen.exitonclick()
