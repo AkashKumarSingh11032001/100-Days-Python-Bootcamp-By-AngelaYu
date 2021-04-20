@@ -10,7 +10,7 @@ user_bet = screen.textinput(title="Make your Bet", prompt="Which will win the ma
 print(user_bet)
 colors = ["yellow", "blue", "green", "red", "maroon", "violet", "magenta", "purple" ]
 y_pos = [-100, -60, -20, 20, 60, 100, 140, 180]
-
+all_tut = []
 
 for _ in range(8):
     my_tut = Turtle("turtle")
@@ -22,6 +22,8 @@ if user_bet:
     is_race_on = True
 
 while is_race_on:
+    randon_dis = random.int(0,10)
+    my_tut.forward(randon_dis)
 
 
 
