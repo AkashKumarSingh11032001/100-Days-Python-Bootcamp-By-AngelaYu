@@ -8,4 +8,6 @@ screen = Screen()
 screen.setup(width= 500,height= 400) #scren size
 
 
+
+
 screen.exitonclick()
