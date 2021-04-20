@@ -19,17 +19,15 @@ my_tut.setheading(225)
 my_tut.forward(250)
 my_tut.setheading(0)
 
-for _ in range(10):
+for dot_count in range(1,number_of_dots):
     my_tut.dot(20,randomcol())
     my_tut.forward(50)
 
-my_tut.setheading(90)
-my_tut.forward(50)
-my_tut.setheading(100)
-
-
-my_tut.forward(500)
-my_tut.setheading(0)
+    my_tut.setheading(90)
+    my_tut.forward(50)
+    my_tut.setheading(180)
+    my_tut.forward(500)
+    my_tut.setheading(0)
 # rgb_color = []
 # colors = colorgram.extract("a.jpg",38)
 # for color in colors:
