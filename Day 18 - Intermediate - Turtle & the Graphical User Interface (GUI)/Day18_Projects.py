@@ -29,6 +29,7 @@ my_tut.setheading(100)
 
 
 my_tut.forward(500)
+my_tut.setheading(0)
 # rgb_color = []
 # colors = colorgram.extract("a.jpg",38)
 # for color in colors:
