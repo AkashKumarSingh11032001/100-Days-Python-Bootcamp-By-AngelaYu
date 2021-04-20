@@ -1,11 +1,23 @@
 from turtle import Screen, Shape, Turtle, color
 import random
 import turtle
-
+import random
 
 my_tut = Turtle()
-my_tut.dot(20,randomcol())
+turtle.colormode(255)
 
+def randomcol():
+    r = random.randint(0,255)
+    g = random.randint(0,255)
+    b = random.randint(0,255)
+    
+    random_color = (r,g,b)
+
+    return random_color
+
+for _ in range(10):
+    my_tut.dot(20,randomcol())
+    my_tut.forward(50)
 
 
 # rgb_color = []
@@ -19,14 +31,7 @@ my_tut.dot(20,randomcol())
 
 # print(rgb_color)
 
-def randomcol():
-    r = random.randint(0,255)
-    g = random.randint(0,255)
-    b = random.randint(0,255)
-    
-    random_color = (r,g,b)
 
-    return random_color
 
 
 
