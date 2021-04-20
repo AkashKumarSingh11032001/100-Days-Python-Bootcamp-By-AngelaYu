@@ -21,9 +21,11 @@ for _ in range(8):
 
 if user_bet:
     is_race_on = True
-
+ 
 while is_race_on:
     for tut in all_tut:
+        if tut.xcor() > 230:
+            print(tut.color())
         randon_dis = random.randint(0,10)
         my_tut.forward(randon_dis)
 
