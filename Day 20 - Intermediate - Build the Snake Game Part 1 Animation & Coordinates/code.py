@@ -1,4 +1,6 @@
 from turtle import Screen, Turtle, setup
+import time
+
 
 screen = Screen()
 screen.setup(width=600,height=600)
@@ -20,9 +22,10 @@ for pos in starting_pos:
 # // SNAKE MOVEMENT
 game_on = True
 while game_on:
+    screen.update()
     for seg in snake:
         seg.forward(10)
-        screen.update()
+        
         time.sleep(1)
 
 
