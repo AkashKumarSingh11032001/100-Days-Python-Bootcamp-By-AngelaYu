@@ -8,7 +8,7 @@ class Snake:
     def __init__(self):
         self.snake = []
         self.create_snake()
-        self.move()
+        #self.move()
 
         def create_snake(self):
             for pos in STARTING_POS:
