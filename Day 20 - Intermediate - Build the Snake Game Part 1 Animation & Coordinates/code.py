@@ -3,7 +3,7 @@ from turtle import Screen, Turtle, setup
 screen = Screen()
 screen.setup(width=600,height=600)
 screen.bgcolor("black")
-screen.tracer(0)
+screen.tracer(0) #// help just like CRT tube
 screen.title("Snake Game")
 
 starting_pos = [(0,0),(-20,0),(-40,0)]
