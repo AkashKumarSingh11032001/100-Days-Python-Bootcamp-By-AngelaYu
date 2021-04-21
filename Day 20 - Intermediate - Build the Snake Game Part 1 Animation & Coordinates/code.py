@@ -26,6 +26,8 @@ while game_on:
     time.sleep(0.1)
     for seg in snake:
         seg.forward(20)
+
+    for seg_num in range(start=2,stop=0,step=-1):
         
 
 
