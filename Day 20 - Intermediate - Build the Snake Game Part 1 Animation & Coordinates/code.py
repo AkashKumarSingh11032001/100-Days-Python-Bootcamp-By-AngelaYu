@@ -10,4 +10,4 @@ screen.title("Snake Game")
 
 
 
-
+screen.exitonclick()
