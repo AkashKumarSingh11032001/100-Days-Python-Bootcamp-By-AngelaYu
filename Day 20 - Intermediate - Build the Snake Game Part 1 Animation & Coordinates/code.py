@@ -32,7 +32,7 @@ while game_on:
         new_y = snake[seg_num].ycor()
         snake[seg_num].goto(new_x,new_y)
 
-
+    snake[0].forward(20)
 
 
 
