@@ -5,8 +5,8 @@ import time
 screen = Screen()
 screen.setup(width=600,height=600)
 screen.bgcolor("black")
-screen.tracer(0) #// help just like CRT tube
 screen.title("Snake Game")
+screen.tracer(0) #// help just like CRT tube
 
 starting_pos = [(0,0),(-20,0),(-40,0)]
 snake = []
@@ -23,10 +23,10 @@ for pos in starting_pos:
 game_on = True
 while game_on:
     screen.update()
+    time.sleep(0.1)
     for seg in snake:
-        seg.forward(10)
+        seg.forward(20)
         
-        time.sleep(1)
 
 
 
