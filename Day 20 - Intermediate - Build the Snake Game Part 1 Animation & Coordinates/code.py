@@ -11,12 +11,7 @@ screen.tracer(0) #// help just like CRT tube
 starting_pos = [(0,0),(-20,0),(-40,0)]
 snake = []
 # // CREATE SNAKE BODY
-for pos in starting_pos:
-    snake_body = Turtle("square")
-    snake_body.color("white")
-    snake_body.penup()
-    snake_body.goto(pos)
-    snake.append(snake_body)
+
 
 
 # // SNAKE MOVEMENT
