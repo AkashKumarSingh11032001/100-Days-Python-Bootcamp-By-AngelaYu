@@ -27,8 +27,10 @@ while game_on:
     for seg in snake:
         seg.forward(20)
 
-    for seg_num in range(start=2,stop=0,step=-1):
-        
+    for seg_num in range(len(snake)-1,0,-1):
+        new_x = snake[seg_num-1].xcor()
+        new_y = snake[seg_num].goto()
+        snake[seg_num].goto(new_x,new_y)
 
 
 
