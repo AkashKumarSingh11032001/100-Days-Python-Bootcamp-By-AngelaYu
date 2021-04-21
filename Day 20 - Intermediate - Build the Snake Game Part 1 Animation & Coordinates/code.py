@@ -6,12 +6,21 @@ screen.bgcolor("black")
 screen.title("Snake Game")
 
 starting_pos = [(0,0),(-20,0),(-40,0)]
+snake = []
 # // CREATE SNAKE BODY
 for pos in starting_pos:
     snake_body = Turtle("square")
     snake_body.color("white")
+    snake_body.penup()
     snake_body.goto(pos)
+    snake.append(snake_body)
 
+
+# // SNAKE MOVEMENT
+game_on = True
+while game_on:
+    for seg in snake:
+        seg.forward(10)
 
 
 
