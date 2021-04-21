@@ -20,6 +20,7 @@ game_on = True
 while game_on:
     screen.update()
     time.sleep(0.1)
+    snake.move()
 
     
 

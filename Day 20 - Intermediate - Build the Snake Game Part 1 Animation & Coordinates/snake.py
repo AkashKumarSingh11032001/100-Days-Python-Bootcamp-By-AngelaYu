@@ -1,7 +1,7 @@
 from turtle import Turtle
 
 STARTING_POS = [(0,0),(-20,0),(-40,0)]
-
+MOVE_DIS = 20
 
 class Snake:
 
@@ -24,5 +24,5 @@ class Snake:
                 new_y = self.snake[seg_num - 1].ycor()
                 self.snake[seg_num].goto(new_x,new_y)
 
-            self.snake[0].forward(20)
+            self.snake[0].forward(MOVE_DIS)
             
