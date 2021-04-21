@@ -33,6 +33,7 @@ while game_on:
         snake[seg_num].goto(new_x,new_y)
 
     snake[0].forward(20)
+    snake[0].left(90)
 
 
 
