@@ -8,8 +8,9 @@ screen.bgcolor("black")
 screen.title("Snake Game")
 screen.tracer(0) #// help just like CRT tube
 
-starting_pos = [(0,0),(-20,0),(-40,0)]
-snake = []
+# // Snake class object
+snake = Snake()
+
 # // CREATE SNAKE BODY
 
 
