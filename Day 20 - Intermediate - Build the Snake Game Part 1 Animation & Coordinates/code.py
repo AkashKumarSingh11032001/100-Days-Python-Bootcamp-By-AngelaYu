@@ -29,7 +29,7 @@ while game_on:
 
     for seg_num in range(len(snake)-1,0,-1):
         new_x = snake[seg_num-1].xcor()
-        new_y = snake[seg_num].goto()
+        new_y = snake[seg_num].ycor()
         snake[seg_num].goto(new_x,new_y)
 
 
