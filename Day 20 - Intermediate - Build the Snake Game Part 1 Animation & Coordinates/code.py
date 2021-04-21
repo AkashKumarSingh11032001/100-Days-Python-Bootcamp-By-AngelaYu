@@ -16,12 +16,14 @@ for pos in starting_pos:
     snake_body.goto(pos)
     snake.append(snake_body)
 
-screen.update()
+
 # // SNAKE MOVEMENT
 game_on = True
 while game_on:
     for seg in snake:
         seg.forward(10)
+        screen.update()
+        time.sleep(1)
 
 
 
