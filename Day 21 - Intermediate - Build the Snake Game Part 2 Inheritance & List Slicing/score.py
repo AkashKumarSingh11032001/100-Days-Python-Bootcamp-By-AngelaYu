@@ -13,3 +13,4 @@ class Score(Turtle):
 
     def increase_score(self):
         self.scores += 1
+        self.write(f"Score: {self.scores}", align="center", font=("Arial", 24, "normal"))
