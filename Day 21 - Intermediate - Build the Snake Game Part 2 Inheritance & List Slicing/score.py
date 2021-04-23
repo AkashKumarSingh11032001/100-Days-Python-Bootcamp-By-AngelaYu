@@ -7,10 +7,16 @@ class Score(Turtle):
         self.scores = 0
         self.color("white")
         self.penup()
-        self.goto(0, 200)
-        self.write(f"Score: {self.scores}",align="center", font=("Arial",24,"normal"))
+        self.goto(0, 270)
         self.hideturtle()
+        self.update_score()
+
+
+
+    def update_score(self):
+        self.write(f"Score: {self.scores}", align="center", font=("Arial", 24, "normal"))
 
     def increase_score(self):
         self.scores += 1
-        self.write(f"Score: {self.scores}", align="center", font=("Arial", 24, "normal"))
+        self.clear()
+        self.update_score()
