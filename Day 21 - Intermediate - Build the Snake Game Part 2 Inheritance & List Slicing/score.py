@@ -10,3 +10,6 @@ class Score(Turtle):
         self.goto(0, 200)
         self.write(f"Score: {self.scores}",align="center", font=("Arial",24,"normal"))
         self.hideturtle()
+
+    def increase_score(self):
+        self.scores += 1
