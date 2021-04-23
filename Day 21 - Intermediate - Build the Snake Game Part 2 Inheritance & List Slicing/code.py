@@ -12,6 +12,8 @@ screen.tracer(0) #// help just like CRT tube
 snake = Snake()
 
 # // CREATE SNAKE BODY
+screen.onkey()
+
 
 
 
