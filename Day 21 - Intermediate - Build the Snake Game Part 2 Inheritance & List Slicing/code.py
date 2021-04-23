@@ -1,6 +1,8 @@
-from turtle import Screen, Turtle, setup
+from turtle import Screen, setup
 import time
 from snake import Snake
+from food import  Food
+
 
 screen = Screen()
 screen.setup(width=600,height=600)
@@ -10,6 +12,7 @@ screen.tracer(0) #// help just like CRT tube
 
 # // Snake class object
 snake = Snake()
+food = Food()
 
 # // CREATE SNAKE BODY
 screen.listen()
