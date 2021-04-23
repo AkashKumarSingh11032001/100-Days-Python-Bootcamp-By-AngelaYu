@@ -26,6 +26,7 @@ while game_on:
     time.sleep(0.1)
     snake.move()
 
+
     
 
 
