@@ -12,9 +12,11 @@ screen.tracer(0) #// help just like CRT tube
 snake = Snake()
 
 # // CREATE SNAKE BODY
-screen.onkey()
-
-
+screen.listen()
+screen.onkey(snake.up,"Up")
+screen.onkey(snake.up,"Up")
+screen.onkey(snake.up,"Up")
+screen.onkey(snake.up,"Up")
 
 
 # // SNAKE MOVEMENT
