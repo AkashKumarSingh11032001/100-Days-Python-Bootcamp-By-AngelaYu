@@ -11,7 +11,12 @@ screen.tracer(0) #// help just like CRT tube
 # // Snake class object
 snake = Snake()
 
-# // CREATE SNAKE BODY
+# // SNAKE CONTROL
+screen.onkey(snake.up,"Up")
+screen.onkey(snake.down,"Down")
+screen.onkey(snake.left,"Left")
+screen.onkey(snake.right,"Right")
+
 
 
 

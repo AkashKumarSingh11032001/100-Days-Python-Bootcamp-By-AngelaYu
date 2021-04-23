@@ -26,3 +26,5 @@ class Snake:
 
         self.snake[0].forward(MOVE_DIS)
             
+    def up(self):
+        self.snake[0].set
