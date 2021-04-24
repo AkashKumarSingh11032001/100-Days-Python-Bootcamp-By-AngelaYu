@@ -11,6 +11,7 @@ paddle.color("white")
 paddle.shapesize(stretch_wid=5,stretch_len=1)
 paddle.penup()
 paddle.goto(350,0)
+screen.tracer(0) #// help just like CRT tube
 
 def go_up():
     new_y = paddle.ycor()+20
@@ -21,6 +22,7 @@ def go_down():
     paddle.goto(paddle.xcor(),new_y)
 
 screen.listen()
+screen.update()
 screen.onkey(go_up,"Up")
 screen.onkey(go_down,"Down")
 
