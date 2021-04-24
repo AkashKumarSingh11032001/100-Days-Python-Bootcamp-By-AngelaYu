@@ -36,6 +36,9 @@ while game_on:
         score.increase_score()
 
 
+    # // DETECT COLLISION WITH WALL
+    if snake.head.xcor() > 280 or
+
 
 
     
