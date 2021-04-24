@@ -1,1 +1,3 @@
-from turtle import Turtle
+from turtle import Screen
+
+screen = Screen()
