@@ -12,6 +12,8 @@ screen.tracer(0) #// help just like CRT tube
 r_paddle = Paddle((350,0))
 l_paddle = Paddle((-350,0))
 ball = Ball()
+
+
 screen.listen()
 screen.onkey(r_paddle.go_up,"Up")
 screen.onkey(r_paddle.go_down,"Down")
