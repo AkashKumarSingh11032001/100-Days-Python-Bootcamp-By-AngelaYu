@@ -40,10 +40,12 @@ while game_on:
     # // Detect R paddle miss
     if ball.xcor() > 380:
         ball.reset_pos()
+        score.l_point()
 
     # // Detect L paddle miss
     if ball.xcor() < -380:
         ball.reset_pos()
+        score.r_point()
 
 
 
