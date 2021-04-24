@@ -9,9 +9,9 @@ screen.tracer(0) #// help just like CRT tube
 r_paddle = Paddle((350,0))
 l_paddle = Paddle((-350,0))
 
-# screen.listen()
-# screen.onkey(go_up,"Up")
-# screen.onkey(go_down,"Down")
+screen.listen()
+screen.onkey(Paddle.go_up,"Up")
+screen.onkey(Paddle.go_down,"Down")
 
 game_on = True
 while game_on:
