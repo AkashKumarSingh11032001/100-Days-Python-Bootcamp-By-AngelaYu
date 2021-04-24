@@ -21,12 +21,13 @@ def go_down():
     new_y = paddle.ycor()-20
     paddle.goto(paddle.xcor(),new_y)
 
-
-screen.update()
 screen.listen()
-
 screen.onkey(go_up,"Up")
 screen.onkey(go_down,"Down")
+
+game_on = True
+while game_on:
+    screen.update()
 
 
 
