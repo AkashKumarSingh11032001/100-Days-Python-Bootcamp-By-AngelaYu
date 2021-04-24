@@ -24,6 +24,7 @@ screen.onkey(l_paddle.go_down,"s")
 game_on = True
 while game_on:
     screen.update()
+    ball.move()
 
 
 
