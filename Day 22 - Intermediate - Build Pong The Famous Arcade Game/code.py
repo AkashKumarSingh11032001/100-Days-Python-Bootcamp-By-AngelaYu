@@ -33,7 +33,7 @@ while game_on:
 
     # // Collision with Paddle
     if ball.distance(r_paddle) < 50 and ball.xcor() > 340:
-        print("con")
+        ball.bounce_x()
 
 
 
