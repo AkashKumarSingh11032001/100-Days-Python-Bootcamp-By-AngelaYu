@@ -1,29 +1,17 @@
 from turtle import Screen, Turtle
-
+from paddle import Paddle
 screen = Screen()
 screen.title("Pong Game")
 screen.setup(width=800,height=600)
 screen.bgcolor("black")
-
-paddle = Turtle()
-paddle.shape("square")
-paddle.color("white")
-paddle.shapesize(stretch_wid=5,stretch_len=1)
-paddle.penup()
-paddle.goto(350,0)
 screen.tracer(0) #// help just like CRT tube
 
-def go_up():
-    new_y = paddle.ycor()+20
-    paddle.goto(paddle.xcor(),new_y)
+r_paddle = Paddle((350,0))
+l_paddle = Paddle((-350,0))
 
-def go_down():
-    new_y = paddle.ycor()-20
-    paddle.goto(paddle.xcor(),new_y)
-
-screen.listen()
-screen.onkey(go_up,"Up")
-screen.onkey(go_down,"Down")
+# screen.listen()
+# screen.onkey(go_up,"Up")
+# screen.onkey(go_down,"Down")
 
 game_on = True
 while game_on:
