@@ -2,6 +2,7 @@ from turtle import Screen, Turtle
 from paddle import Paddle
 from ball import Ball
 import time
+from score import Score
 
 screen = Screen()
 screen.title("Pong Game")
