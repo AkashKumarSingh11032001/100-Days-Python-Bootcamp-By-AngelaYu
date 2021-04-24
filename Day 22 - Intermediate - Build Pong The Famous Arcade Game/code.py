@@ -13,6 +13,7 @@ screen.tracer(0) #// help just like CRT tube
 r_paddle = Paddle((350,0))
 l_paddle = Paddle((-350,0))
 ball = Ball()
+score = Score()
 
 
 screen.listen()
