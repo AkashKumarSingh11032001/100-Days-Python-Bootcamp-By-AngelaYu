@@ -29,7 +29,7 @@ while game_on:
 
     # // Collision with Wall
     if ball.ycor() > 280 or ball.ycor() < -280:
-        ball.bounce()
+        ball.bounce_y()
 
     # // Collision with Paddle
     if ball.distance(r_paddle) < 50 and ball.xcor() > 340:
