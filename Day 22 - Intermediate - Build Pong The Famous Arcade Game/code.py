@@ -27,6 +27,8 @@ while game_on:
     time.sleep(0.1)
     ball.move()
 
+    # // Collision with Wall
+    if ball.ycor() > 300 or ball.ycor() < -300:
 
 
 
