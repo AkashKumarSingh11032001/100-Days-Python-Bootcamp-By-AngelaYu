@@ -6,6 +6,5 @@ class Ball(Turtle):
         super(Ball, self).__init__()
         self.shape("circle")
         self.color("white")
-        self.si
         self.penup()
         self.goto(x=0,y=0)
