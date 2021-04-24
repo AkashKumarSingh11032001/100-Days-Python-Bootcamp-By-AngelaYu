@@ -29,6 +29,7 @@ while game_on:
 
     # // Collision with Wall
     if ball.ycor() > 300 or ball.ycor() < -300:
+        ball.bounce()
 
 
 
