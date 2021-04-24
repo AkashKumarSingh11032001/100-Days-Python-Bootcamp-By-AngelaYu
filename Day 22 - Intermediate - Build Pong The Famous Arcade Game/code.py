@@ -1,5 +1,8 @@
 from turtle import Screen, Turtle
 from paddle import Paddle
+
+
+
 screen = Screen()
 screen.title("Pong Game")
 screen.setup(width=800,height=600)
