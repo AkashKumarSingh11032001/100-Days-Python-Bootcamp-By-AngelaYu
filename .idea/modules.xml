@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/100-Days-Python-Bootcamp-By-AngelaYu.iml" filepath="$PROJECT_DIR$/.idea/100-Days-Python-Bootcamp-By-AngelaYu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Face-Recognition-Application-Using-Python/.idea/Face-Recognition-Application-Using-Python.iml" filepath="$PROJECT_DIR$/../Face-Recognition-Application-Using-Python/.idea/Face-Recognition-Application-Using-Python.iml" />
     </modules>
   </component>
 </project>
