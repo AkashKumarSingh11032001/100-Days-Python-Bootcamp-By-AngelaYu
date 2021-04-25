@@ -3,4 +3,4 @@
 #     print(content)
 
 with open("text.txt",mode="a") as file:
-    file.write("Hello this is practice file ")
+    file.write("\nHello this is practice file ")
