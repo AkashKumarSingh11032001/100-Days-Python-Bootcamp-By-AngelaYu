@@ -2,3 +2,4 @@
 #     content = file.read()
 #     print(content)
 
+with open("text.txt") as file:
