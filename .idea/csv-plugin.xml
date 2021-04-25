@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="A:\Project\Face-Recognition-Application-Using-Python\main.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Day 21 - Intermediate - Build the Snake Game Part 2 Inheritance &amp; List Slicing\food.py">
           <value>
             <Attribute>
