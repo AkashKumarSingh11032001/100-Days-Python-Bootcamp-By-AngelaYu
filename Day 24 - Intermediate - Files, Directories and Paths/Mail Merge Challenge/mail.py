@@ -1,6 +1,6 @@
 
 with open("Inputs/name.txt") as inv_name:
-    names = inv_name.readline()
+    names = inv_name.readlines()
 
 with open("Inputs/Letter.txt") as letter:
     letter_cont = letter.read()
