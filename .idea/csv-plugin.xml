@@ -38,6 +38,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Day 24 - Intermediate - Files, Directories and Paths\Mail Merge Challenge\Inputs\Letter.txt">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Day 24 - Intermediate - Files, Directories and Paths\Mail Merge Challenge\mail.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Day 24 - Intermediate - Files, Directories and Paths\code.py">
           <value>
             <Attribute>
