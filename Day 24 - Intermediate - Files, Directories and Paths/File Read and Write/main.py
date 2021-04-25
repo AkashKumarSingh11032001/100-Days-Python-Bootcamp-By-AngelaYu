@@ -2,4 +2,5 @@
 #     content = file.read()
 #     print(content)
 
-with open("text.txt") as file:
+with open("text.txt",mode="w") as file:
+    file.write("text.txt")
