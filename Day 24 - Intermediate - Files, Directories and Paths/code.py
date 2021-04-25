@@ -15,7 +15,7 @@ snake = Snake()
 food = Food()
 score = Score()
 
-# // CREATE SNAKE BODY
+# // CREATE SNAKE BODY key Movement
 screen.listen()
 screen.onkey(snake.up,"Up")
 screen.onkey(snake.down,"Down")
