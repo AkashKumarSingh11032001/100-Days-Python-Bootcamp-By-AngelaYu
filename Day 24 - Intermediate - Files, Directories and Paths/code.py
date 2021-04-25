@@ -46,6 +46,7 @@ while game_on:
     for seg in snake.snake[1:]:
         if snake.head.distance(seg) < 10:
             score.reset()
+            snake.reset()
 
 
 
