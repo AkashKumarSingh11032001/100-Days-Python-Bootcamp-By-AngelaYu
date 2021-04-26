@@ -23,6 +23,12 @@ while len(guess_state) < 50:
     print(answer_state)
 
     if answer_state == "Exit":
+        missing_state = []
+        for state in all_states:
+            if state not in guess_state:
+                missing_state.append(state)
+        new_data = pandas.DataFrame(missing_state)
+        new_data.to_csv("missing_state.csv")
         break
     # if user answer present in 50_state
 
@@ -35,4 +41,5 @@ while len(guess_state) < 50:
         t.goto(int(state_data.x),int(state_data.y))
         t.write(state_data.state.item())
 
+#state csv which was not guessed
 
