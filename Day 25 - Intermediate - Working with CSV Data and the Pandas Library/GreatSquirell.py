@@ -10,3 +10,8 @@ black_squ = data[data["Primary Fur Color"] == "Black"]
 print(len(gray_squ))
 print(len(cinnamon_squ))
 print(len(black_squ))
+
+data_dic = {
+    "Fur Color": ["Gray","Cinnamon","Black"],
+    "Count": [len(gray_squ),len(cinnamon_squ),len(black_squ)]
+}
