@@ -42,5 +42,5 @@ print(data[data.temp == data.temp.max()])
 monday = data[data.day == "Monday"]
 print(monday.condition)
 
-mon_temp = data[data.temp == data.day.monday]
-print(mon_temp)
+mon_temp = int(monday.temp)
+print(mon_temp*(9/5)+32)
