@@ -29,4 +29,7 @@ print(data["temp"].max())
 
 print(tem_list)
 
+# // GTE DATA IN COLUMN
+print(data["condition"])
+print(data.condition)
 
