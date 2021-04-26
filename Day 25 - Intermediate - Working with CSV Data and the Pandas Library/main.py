@@ -33,3 +33,8 @@ print(tem_list)
 print(data["condition"])
 print(data.condition)
 
+# // GET DATA IN ROW WISE
+print(data[data.day == "Monday"])
+
+# Q:
+print(data[data.temp == data.temp.max()])
