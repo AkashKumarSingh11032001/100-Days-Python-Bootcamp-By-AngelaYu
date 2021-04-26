@@ -11,6 +11,7 @@
 #         if row[1] != ' temp':
 #             temperature.append(int(row[1]))
 #     print(temperature)
-
+# //ALTERNATIVE
 import pandas
-
+data = pandas.read_csv("weather.csv")
+print(data)
