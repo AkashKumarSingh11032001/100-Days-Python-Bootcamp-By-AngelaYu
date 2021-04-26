@@ -25,6 +25,7 @@ tem_list = data["temp"].to_list()
 # avg_temp = sum(tem_list)/len(tem_list)
 # print(avg_temp)
 print(data["temp"].mean())
+print(data["temp"].max())
 
 print(tem_list)
 
