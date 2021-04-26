@@ -44,3 +44,5 @@ print(monday.condition)
 
 mon_temp = int(monday.temp)
 print(mon_temp*(9/5)+32)
+
+# // cFEATE DATAFRAME FROM SCRACH
