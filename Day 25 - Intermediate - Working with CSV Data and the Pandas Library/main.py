@@ -38,3 +38,6 @@ print(data[data.day == "Monday"])
 
 # Q:
 print(data[data.temp == data.temp.max()])
+
+monday = data[data.day == "Monday"]
+print(monday.condition)
