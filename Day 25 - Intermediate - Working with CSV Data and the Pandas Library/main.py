@@ -18,4 +18,10 @@ data = pandas.read_csv("weather.csv")
 print(type(data))
 print(data["temp"])
 
+data_dic = data.to_dict()
+print(data_dic)
+
+tem_list = data["temp"].to_list()
+print(tem_list)
+
 
