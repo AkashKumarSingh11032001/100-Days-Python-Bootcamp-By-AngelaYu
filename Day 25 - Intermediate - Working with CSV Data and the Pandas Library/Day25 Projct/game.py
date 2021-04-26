@@ -14,20 +14,25 @@ turtle.shape(img)
 #
 # turtle.onscreenclick(get_mouse_click)
 # turtle.mainloop()
+guess_state = []
+while len(guess_state) < 50:
+    data = pandas.read_csv("50_states.csv")
+    all_states = data.state.to_list() # // converting to list
 
-data = pandas.read_csv("50_states.csv")
-all_states = data.state.to_list() # // converting to list
+    answer_state = screen.textinput(title="State name",prompt="Guess State name?")
+    print(answer_state)
 
-answer_state = screen.textinput(title="State name",prompt="Guess State name?").lower()
-print(answer_state)
 
-# if user answer present in 50_state
-if answer_state in all_states:
-    t = turtle.Turtle()
-    t.hideturtle()
-    t.penup()
-    state_data = data[data.state == answer_state]
-    t.goto(state_data.x.state_data.y)
-    t.write(state_data.state)
+    # if user answer present in 50_state
 
+    if answer_state in all_states:
+        guess_state.append(answer_state)
+        t = turtle.Turtle()
+        t.hideturtle()
+        t.penup()
+        state_data = data[data.state == answer_state]
+        t.goto(int(state_data.x),int(state_data.y))
+        t.write(state_data.state.item())
+
+screen.exitonclick()
 
