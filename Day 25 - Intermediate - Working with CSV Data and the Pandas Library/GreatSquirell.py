@@ -15,3 +15,5 @@ data_dic = {
     "Fur Color": ["Gray","Cinnamon","Black"],
     "Count": [len(gray_squ),len(cinnamon_squ),len(black_squ)]
 }
+df = pandas.DataFrame(data_dic)
+df.to_csv("anyas_1_file.csv")
