@@ -22,6 +22,8 @@ data_dic = data.to_dict()
 print(data_dic)
 
 tem_list = data["temp"].to_list()
+avg_temp = sum(tem_list)/len(tem_list)
+print(avg_temp)
 print(tem_list)
 
 
