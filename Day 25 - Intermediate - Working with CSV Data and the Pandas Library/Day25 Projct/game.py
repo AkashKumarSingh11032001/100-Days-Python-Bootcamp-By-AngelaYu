@@ -12,5 +12,3 @@ def get_mouse_click(x,y):
 
 turtle.onscreenclick(get_mouse_click())
 turtle.mainloop()
-
-screen.exitonclick()
