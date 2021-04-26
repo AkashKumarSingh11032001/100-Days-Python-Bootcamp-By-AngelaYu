@@ -19,10 +19,11 @@ while len(guess_state) < 50:
     data = pandas.read_csv("50_states.csv")
     all_states = data.state.to_list() # // converting to list
 
-    answer_state = screen.textinput(title="State name",prompt="Guess State name?")
+    answer_state = screen.textinput(title="State name",prompt="Guess State name?").title()
     print(answer_state)
 
-
+    if answer_state == "Exit":
+        break
     # if user answer present in 50_state
 
     if answer_state in all_states:
@@ -34,5 +35,4 @@ while len(guess_state) < 50:
         t.goto(int(state_data.x),int(state_data.y))
         t.write(state_data.state.item())
 
-screen.exitonclick()
 
