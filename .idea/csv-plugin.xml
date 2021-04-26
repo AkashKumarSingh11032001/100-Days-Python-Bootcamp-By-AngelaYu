@@ -59,6 +59,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Day 25 - Intermediate - Working with CSV Data and the Pandas Library\Day25 Projct\game.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Day 25 - Intermediate - Working with CSV Data and the Pandas Library\GreatSquirell.py">
           <value>
             <Attribute>
