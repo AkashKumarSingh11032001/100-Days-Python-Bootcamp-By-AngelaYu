@@ -1,4 +1,5 @@
 import turtle
+import pandas
 
 screen = turtle.Screen()
 screen.title("US States")
@@ -14,4 +15,5 @@ turtle.shape(img)
 # turtle.onscreenclick(get_mouse_click)
 # turtle.mainloop()
 
-answer_state = screen.textinput(title="State name",prompt="Guess State name?")
+answer_state = screen.textinput(title="State name",prompt="Guess State name?").lower()
+
