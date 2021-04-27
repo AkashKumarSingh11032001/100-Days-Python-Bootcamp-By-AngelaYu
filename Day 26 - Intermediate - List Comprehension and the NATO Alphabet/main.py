@@ -1,3 +1,0 @@
-student = {
-    "Alex": 89,
-}
