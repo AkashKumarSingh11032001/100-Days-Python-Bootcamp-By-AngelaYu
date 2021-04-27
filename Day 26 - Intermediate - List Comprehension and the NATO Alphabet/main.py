@@ -1,0 +1,3 @@
+student = {
+    "Alex": 89,
+}
