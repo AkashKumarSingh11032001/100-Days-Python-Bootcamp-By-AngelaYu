@@ -3,9 +3,9 @@ student_dict = {
     "score": [56,76,98]
 }
 
-for (key,value) in student_dict.items():
-    print(key)
-    print(value)
+# for (key,value) in student_dict.items():
+#     print(key)
+#     print(value)
 
 #pandas
 import pandas
@@ -20,4 +20,5 @@ print(student_dataframe)
 for(index,row) in student_dataframe.iterrows():
     print(index)
     print(row)
+    print(row.score)
 
