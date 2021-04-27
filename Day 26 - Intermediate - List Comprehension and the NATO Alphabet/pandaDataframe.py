@@ -14,3 +14,4 @@ print(student_dataframe)
 
 #loop throw dataframe
 for (key,value) in student_dataframe.items():
+    print(value)
