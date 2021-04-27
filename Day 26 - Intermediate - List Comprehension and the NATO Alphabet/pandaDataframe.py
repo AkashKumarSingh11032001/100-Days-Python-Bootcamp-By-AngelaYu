@@ -6,3 +6,11 @@ student_dict = {
 for (key,value) in student_dict.items():
     print(key)
     print(value)
+
+#pandas
+import pandas
+student_dataframe = pandas.DataFrame(student_dict)
+print(student_dataframe)
+
+#loop throw dataframe
+for (key,value) in student_dataframe.items():
