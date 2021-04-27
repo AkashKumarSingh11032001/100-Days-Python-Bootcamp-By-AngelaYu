@@ -1,5 +1,5 @@
 student_dict = {
-    "student": ["Akash","James","Lily"]
+    "student": ["Akash","James","Lily"],
     "score": [56,76,98]
 }
 
